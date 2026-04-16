@@ -1,61 +1,135 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>Higiena królika</title>
-    <link rel="icon" href="krolik.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Higiena królika</title>
+<link rel="icon" href="krolik.ico">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<style>
+body {
+    background: linear-gradient(to bottom, #f5e6cc, #f0dcc0);
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+}
+
+.header {
+    background-color:#e8d5b7;
+    padding:25px;
+    text-align:center;
+    border-radius:0 0 20px 20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.menu {
+    text-decoration:none;
+    background-color:#e8d5b7;
+    padding:10px 15px;
+    margin:5px;
+    border-radius:10px;
+    color:black;
+    display:inline-block;
+    transition:0.3s;
+}
+
+.menu:hover {
+    background-color:#d6c2a3;
+    transform:scale(1.05);
+}
+
+.section {
+    background-color:#fffaf0;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    margin-bottom:20px;
+    transition:0.3s;
+}
+
+.section:hover {
+    transform:scale(1.02);
+}
+
+.hero {
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.hero img {
+    width:240px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.fade {
+    opacity:0;
+    transform:translateY(20px);
+    animation:fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.top-btn {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    padding:10px 15px;
+    border:none;
+    border-radius:10px;
+    background:#e8d5b7;
+    cursor:pointer;
+}
+</style>
+
 </head>
 
-<body style="background-color: #f5e6cc; font-family: Arial; margin:0;">
+<body>
 
-<div style="max-width: 900px; margin:auto; padding:20px;">
-
-<div style="background-color:#e8d5b7; padding:20px; border-radius:20px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<div class="header fade">
 <h1 style="margin:0;">Świadomy Opiekun Królika</h1>
-<p style="margin:5px 0 0 0;">Poradnik dla przyszłych i obecnych opiekunów 🐰</p>
+<p>Poradnik dla przyszłych i obecnych opiekunów 🐰</p>
 </div>
 
-<h3 style="text-align:center;">Menu</h3>
-
-<div style="text-align:center;">
-
-<a href="index.html" style="text-decoration:none; background-color:#e8d5b7; padding:10px 15px; margin:5px; border-radius:10px; color:black; display:inline-block;">Strona główna</a>
-
-<a href="dieta.html" style="text-decoration:none; background-color:#e8d5b7; padding:10px 15px; margin:5px; border-radius:10px; color:black; display:inline-block;">Dieta</a>
-
-<a href="opieka.html" style="text-decoration:none; background-color:#e8d5b7; padding:10px 15px; margin:5px; border-radius:10px; color:black; display:inline-block;">Opieka</a>
-
-<a href="higiena.html" style="text-decoration:none; background-color:#e8d5b7; padding:10px 15px; margin:5px; border-radius:10px; color:black; display:inline-block;">Higiena</a>
-
-<a href="wyprawka.html" style="text-decoration:none; background-color:#e8d5b7; padding:10px 15px; margin:5px; border-radius:10px; color:black; display:inline-block;">Wyprawka</a>
-
+<div style="text-align:center; margin-top:15px;">
+<a href="index.html" class="menu">Strona główna</a>
+<a href="dieta.html" class="menu">Dieta</a>
+<a href="opieka.html" class="menu">Opieka</a>
+<a href="higiena.html" class="menu">Higiena</a>
+<a href="wyprawka.html" class="menu">Wyprawka</a>
+<a href="quiz.html" class="menu">quiz</a>
 </div>
 
-<br>
+<div class="fade" style="max-width: 900px; margin:auto; padding:20px;">
 
-<div style="display:flex; align-items:flex-start; gap:25px; background-color:#fffaf0; padding:15px; border-radius:15px;">
+<div class="section hero">
 
-<img src="higiena.png" style="width:220px; border-radius:15px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+<img src="higiena.png">
 
 <div>
-
 <h2>Higiena królika</h2>
 <p style="line-height:1.6;">
 Higiena królika jest bardzo ważna dla jego zdrowia i samopoczucia. Choć króliki są zwierzętami czystymi i same dbają o swoją sierść, wymagają także wsparcia ze strony opiekuna.
 Królika powinno się nauczyć korzystania z kuwety tzw. kuwetowania, jest to dość proste do nauki.
 </p>
-
-</div>
 </div>
 
-<br>
+</div>
 
-<div style="background-color:#fffaf0; padding:15px; border-radius:15px;">
+<div class="section">
 
 <h2>Czyszczenie klatki i miejsca życia</h2>
 
 <p style="line-height:1.6;">
 Miejsce, w którym przebywa królik, powinno być regularnie sprzątane.
+</p>
 
 <p style="line-height:1.6;">
 Czyste otoczenie zapobiega chorobom i sprawia, że królik czuje się komfortowo.
@@ -63,9 +137,7 @@ Czyste otoczenie zapobiega chorobom i sprawia, że królik czuje się komfortowo
 
 </div>
 
-<br>
-
-<div style="background-color:#fffaf0; padding:15px; border-radius:15px;">
+<div class="section">
 
 <h2>Pielęgnacja sierści</h2>
 
@@ -79,9 +151,7 @@ Zapobiega to połykaniu sierści, które może prowadzić do problemów trawienn
 
 </div>
 
-<br>
-
-<div style="background-color:#fffaf0; padding:15px; border-radius:15px;">
+<div class="section">
 
 <h2>Pazury i zęby</h2>
 
@@ -95,9 +165,7 @@ Zęby królika rosną przez całe życie, dlatego ważne jest zapewnienie mu odp
 
 </div>
 
-<br>
-
-<div style="background-color:#fffaf0; padding:15px; border-radius:15px;">
+<div class="section">
 
 <h2>Kąpiele</h2>
 
@@ -112,6 +180,16 @@ W razie zabrudzenia lepiej użyć wilgotnej ściereczki i delikatnie oczyścić 
 </div>
 
 </div>
+
+<button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="top-btn">
+⬆️
+</button>
+
+<hr>
+
+<p style="text-align:center; font-size:14px;">
+© Świadomy Opiekun Królika
+</p>
 
 </body>
 </html>
