@@ -1,139 +1,186 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>Wyprawka dla królika</title>
-    <link rel="icon" href="krolik.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wyprawka dla królika</title>
+<link rel="icon" href="krolik.ico">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<style>
+body {
+    background: linear-gradient(to bottom, #f5e6cc, #f0dcc0);
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+}
+
+.header {
+    background-color:#e8d5b7;
+    padding:25px;
+    text-align:center;
+    border-radius:0 0 20px 20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.menu {
+    text-decoration:none;
+    background-color:#e8d5b7;
+    padding:10px 15px;
+    margin:5px;
+    border-radius:10px;
+    color:black;
+    display:inline-block;
+    transition:0.3s;
+}
+
+.menu:hover {
+    background-color:#d6c2a3;
+    transform:scale(1.05);
+}
+
+.section {
+    background-color:#fffaf0;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    margin-bottom:20px;
+    transition:0.3s;
+}
+
+.section:hover {
+    transform:scale(1.02);
+}
+
+.hero {
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.hero img {
+    width:240px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.fade {
+    opacity:0;
+    transform:translateY(20px);
+    animation:fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.top-btn {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    padding:10px 15px;
+    border:none;
+    border-radius:10px;
+    background:#e8d5b7;
+    cursor:pointer;
+}
+</style>
+
 </head>
 
-<body style="background-color: #f5e6cc; font-family: Arial; margin:0;">
+<body>
 
-<div style="max-width: 900px; margin:auto; padding:20px;">
-
-<div style="background-color:#e8d5b7; padding:20px; border-radius:20px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<div class="header fade">
 <h1 style="margin:0;">Świadomy Opiekun Królika</h1>
-<p style="margin:5px 0 0 0;">Poradnik dla przyszłych i obecnych opiekunów 🐰</p>
+<p>Poradnik dla przyszłych i obecnych opiekunów 🐰</p>
 </div>
 
-<h3 style="text-align:center;">Menu</h3>
-
-<div style="text-align:center;">
-
-<a href="index.html" style="text-decoration:none; background-color:#e8d5b7; padding:10px 15px; margin:5px; border-radius:10px; color:black; display:inline-block;">Strona główna</a>
-
-<a href="dieta.html" style="text-decoration:none; background-color:#e8d5b7; padding:10px 15px; margin:5px; border-radius:10px; color:black; display:inline-block;">Dieta</a>
-
-<a href="opieka.html" style="text-decoration:none; background-color:#e8d5b7; padding:10px 15px; margin:5px; border-radius:10px; color:black; display:inline-block;">Opieka</a>
-
-<a href="higiena.html" style="text-decoration:none; background-color:#e8d5b7; padding:10px 15px; margin:5px; border-radius:10px; color:black; display:inline-block;">Higiena</a>
-
-<a href="wyprawka.html" style="text-decoration:none; background-color:#e8d5b7; padding:10px 15px; margin:5px; border-radius:10px; color:black; display:inline-block;">Wyprawka</a>
-
+<div style="text-align:center; margin-top:15px;">
+<a href="index.html" class="menu">Strona główna</a>
+<a href="dieta.html" class="menu">Dieta</a>
+<a href="opieka.html" class="menu">Opieka</a>
+<a href="higiena.html" class="menu">Higiena</a>
+<a href="wyprawka.html" class="menu">Wyprawka</a>
+<a href="quiz.html" class="menu">quiz</a>
 </div>
 
-<br>
+<div class="fade" style="max-width: 900px; margin:auto; padding:20px;">
 
-<div style="display:flex; align-items:flex-start; gap:25px; background-color:#fffaf0; padding:15px; border-radius:15px;">
-
-<img src="wyprawka.png" style="width:220px; border-radius:15px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+<div class="section hero">
+<img src="wyprawka.png">
 
 <div>
-
 <h2>Wyprawka dla królika</h2>
-<p style="line-height:1.6;">
+<p>
 Przygotowanie odpowiedniej wyprawki to bardzo ważny krok przed przyjęciem królika do domu. 
 Dobrze dobrane rzeczy zapewnią mu komfort, bezpieczeństwo i zdrowie.
 </p>
-
 </div>
 </div>
 
-<br>
-
-<div style="background-color:#fffaf0; padding:15px; border-radius:15px;">
-
+<div class="section">
 <h2>Klatka lub wybieg</h2>
-
-<p style="line-height:1.6;">
-Minimalne wymiary klatki dla 1 królika to około <b>120 × 50 cm</b>, ale im większa, tym lepiej. 
-Najlepszym rozwiązaniem jest jednak duży kojec lub wolny wybieg(królik ma dostęp do klatki 24/7).
+<p>
+Minimalne wymiary klatki dla 1 królika to około <b>120 × 50 cm</b>, ale im większa, tym lepiej.
+Najlepszym rozwiązaniem jest jednak duży kojec lub wolny wybieg.
 </p>
-
-<p style="line-height:1.6;">
-Klatka nie powinna być jedynym miejscem przebywania królika — musi mieć codziennie czas na ruch poza nią min.4 godz.
+<p>
+Królik powinien mieć codziennie minimum 5 godziny ruchu poza klatką.
 </p>
-
 </div>
 
-<br>
-
-<div style="background-color:#fffaf0; padding:15px; border-radius:15px;">
-
+<div class="section">
 <h2>Kuweta i podłoże</h2>
-
-<p style="line-height:1.6;">
-Królik powinien mieć kuwetę, najlepiej wypełnioną żwirkiem lub pelletem. 
-Nie należy używać żwirków zapachowych.
+<p>
+Królik powinien mieć kuwetę, najlepiej z pelletem lub żwirkiem.
+Nie używaj żwirków zapachowych.
 </p>
-
 </div>
 
-<br>
-
-<div style="background-color:#fffaf0; padding:15px; border-radius:15px;">
-
+<div class="section">
 <h2>Miski i poidełko</h2>
-
-<p style="line-height:1.6;">
-Najlepiej sprawdza się ciężka miska na wodę, której królik nie przewróci. 
-Można także używać poidełka, ale tylko jeśli królik nie chce pić z miski.
+<p>
+Najlepiej sprawdza się ciężka miska na wodę. 
+Poidełko tylko jeśli królik nie chce pić z miski.
 </p>
-
 </div>
 
-<br>
-
-<div style="background-color:#fffaf0; padding:15px; border-radius:15px;">
-
+<div class="section">
 <h2>Siano i jedzenie</h2>
-
-<p style="line-height:1.6;">
-Siano powinno być dostępne cały czas, dlatego warto kupić paśnik. 
-Oprócz tego potrzebny będzie granulat dobrej jakości, dużo rodzai różnych ziół oraz świeże warzywa.
+<p>
+Siano musi być dostępne cały czas.
+Dodatkowo granulat dobrej jakości, zioła i świeże warzywa.
 </p>
-
 </div>
 
-<br>
-
-<div style="background-color:#fffaf0; padding:15px; border-radius:15px;">
-
+<div class="section">
 <h2>Domek i kryjówka</h2>
-
-<p style="line-height:1.6;">
-Królik potrzebuje miejsca, w którym może się schować i odpocząć. 
-Może to być domek, tunel lub inne bezpieczne schronienie.
+<p>
+Królik potrzebuje miejsca do odpoczynku — domek, tunel lub kryjówka.
 </p>
-
 </div>
 
-<br>
-
-<div style="background-color:#fffaf0; padding:15px; border-radius:15px;">
-
+<div class="section">
 <h2>Zabawki</h2>
-
-<p style="line-height:1.6;">
-Króliki potrzebują zajęcia, dlatego warto zapewnić im zabawki do gryzienia, kopania i eksplorowania.
+<p>
+Króliki potrzebują zajęcia — kartony, tunele, zabawki logiczne i naturalne gryzaki.
 </p>
-
-<p style="line-height:1.6;">
-Mogą to być np. kartony, tunele, zabawki logiczne czy naturalne gryzaki.
-</p>
-
 </div>
 
 </div>
+
+<button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="top-btn">
+⬆️
+</button>
+
+<hr>
+
+<p style="text-align:center; font-size:14px;">
+© Świadomy Opiekun Królika
+</p>
 
 </body>
 </html>
